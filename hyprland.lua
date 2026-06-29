@@ -18,7 +18,7 @@ hl.monitor({
 	output = "",
 	mode = "highres",
 	position = "auto",
-	scale = "1",
+	scale = "1.5",
 })
 
 ---------------------
@@ -259,6 +259,8 @@ hl.bind(
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
+
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(screen_shot))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
